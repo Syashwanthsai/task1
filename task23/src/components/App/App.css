@@ -1,0 +1,68 @@
+html {
+  font-size: 18px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+      font-size: 15px;
+  }
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #cca353;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: #000;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.image-container img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.App {
+  font-family: 'Work Sans', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  padding: .66rem 0;
+  text-align: center;
+  background-color: #cca353;
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
