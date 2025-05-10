@@ -1,0 +1,40 @@
+{
+  "name": "ravenous",
+  "version": "1.0.0",
+  "description": "A React application to search for restaurants using the Yelp API.",
+  "main": "index.js",
+"scripts": {
+  "start": "react-scripts --openssl-legacy-provider start",
+  "dev": "npm start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
+  "keywords": [
+    "react",
+    "yelp",
+    "restaurants",
+    "search"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {},
+  "homepage": "http://yourusername.github.io/ravenous",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+.BusinessList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 4.4rem 10%;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.BusinessList > div {
+  transition: transform 0.3s ease-in-out;
+}
+
+.BusinessList > div:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

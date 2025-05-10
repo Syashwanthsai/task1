@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #authorization {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4a90e2;
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input[type="password"],
+  input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="password"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  input[type="submit"] {
+    background: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  input[type="submit"]:hover {
+    background: #357abd;
+  }
+  
+  /* Contact Info Styles */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
